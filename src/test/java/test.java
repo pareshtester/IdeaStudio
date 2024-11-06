@@ -34,7 +34,7 @@ public class test {
 		d.delete();
 		System.setProperty("webdriver.firefox.driver", projectpath+"/geckodriver.exe");
 		driver = new FirefoxDriver();
-		driver.get("https://ideastudioworld.com/");
+		driver.get("https://www.ideastudio.world/");
 		 String title =  driver.getTitle();
 	       System.out.println(title);
 	       assertEquals(title, "Idea Studio");
