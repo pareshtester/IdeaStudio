@@ -16,8 +16,10 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import ReRunAutomation.ReRunAutomationScript;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -41,9 +43,9 @@ public class httptest {
 		testfolderdelete d = new testfolderdelete();
 		d.delete();
 		System.setProperty("webdriver.firefox.driver", projectpath+"/geckodriver.exe");
-		
+		// 11th nov //https://www.ideastudio.world/
 		//driver.get("https://ideastudioworld.com/");
-		String urlString ="https://www.ideastudio.world/";
+		String urlString ="https://ideastudioworld.com/";
 		  HttpClient client = HttpClient.newHttpClient();
 	        HttpRequest request = HttpRequest.newBuilder()
 	                                         .uri(URI.create(urlString))
@@ -58,11 +60,14 @@ public class httptest {
 	            System.err.println("Error checking status code: " + e.getMessage());
 	        }
 		 if(statusCode == 200){
+			 SoftAssert soft = new SoftAssert();
 			 driver = new FirefoxDriver();
 			 driver.get(urlString);
 			 String title =  driver.getTitle();
-		       System.out.println(title);
+		      // System.out.println(title);
+		       soft.assertEquals(title, "Idea1 Studio");
 		       assertEquals(title, "Idea Studio");
+		       System.out.println("still running");
 		       Thread.sleep(1000);
 		       //File screenshotfile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		        
@@ -93,6 +98,11 @@ public class httptest {
 		 }
 		 
 		
+	}
+	@AfterMethod
+	public void closeBrowser()
+	{
+		driver.quit();
 	}
 	
 

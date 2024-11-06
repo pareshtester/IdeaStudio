@@ -10,6 +10,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
@@ -34,7 +35,7 @@ public class test {
 		d.delete();
 		System.setProperty("webdriver.firefox.driver", projectpath+"/geckodriver.exe");
 		driver = new FirefoxDriver();
-		driver.get("https://www.ideastudio.world/");
+		driver.get("https://ideastudioworld.com/");
 		 String title =  driver.getTitle();
 	       System.out.println(title);
 	       assertEquals(title, "Idea Studio");
@@ -51,5 +52,9 @@ public class test {
 	       driver.close();
 	}
 	
-
+	@AfterMethod
+	public void closeBrowser()
+	{
+		driver.quit();
+	}
 }
