@@ -19,6 +19,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import utilities.DeleteFiles;
 
 
 public class BaseClass {
@@ -33,23 +34,29 @@ public class BaseClass {
 	{
 		if(browserName.equalsIgnoreCase("chrome"))
 		{
-			cOpt.addArguments("--start-maximized"); 
+			
+			cOpt.addArguments("start-maximized"); 
 			cOpt.addArguments("--incognito");
+			cOpt.addArguments("--headless");
 			WebDriverManager.chromedriver().setup();
-			driver.set(new ChromeDriver());
+			driver.set(new ChromeDriver(cOpt));
 			
 		}else if(browserName.equalsIgnoreCase("firefox"))
 		{
-			fOpt.addArguments("--start-mazimized");
+			
+			fOpt.addArguments("start-mazimized");
 			fOpt.addArguments("-incognito");
+			fOpt.addArguments("--headless");
 			WebDriverManager.firefoxdriver().setup();
-			driver.set(new FirefoxDriver());
+			driver.set(new FirefoxDriver(fOpt));
 		}else if(browserName.equalsIgnoreCase("Edge"))
 		{
-			eOpt.addArguments("--start-maximized");
+			
+			eOpt.addArguments("start-maximized");
 			eOpt.addArguments("-incognito");
+			eOpt.addArguments("--headless");
 			WebDriverManager.edgedriver().setup();
-			driver.set(new EdgeDriver());
+			driver.set(new EdgeDriver(eOpt));
 		}
 	}
 	
@@ -71,7 +78,13 @@ public class BaseClass {
 	
 	public String getScreenShotPath(String testname, WebDriver driver)
 	{
+		/*
+		 * String screenshotpath = System.getProperty("user.dir")+"/Screenshots"; File
+		 * folder = new File(screenshotpath); DeleteFiles df = new DeleteFiles();
+		 * df.deletefiles(folder);
+		 */
 		TakesScreenshot ts = (TakesScreenshot)driver;
+		
 		Date d = new Date();
 		String datenme= d.toString().replace(" ", "-").replace(":", "-"); 
 		File source= ts.getScreenshotAs(OutputType.FILE);

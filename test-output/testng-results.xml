@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-29T16:13:46 IST" name="Suite" finished-at="2024-11-29T16:14:08 IST" duration-ms="22693">
+  <suite started-at="2024-11-29T17:55:41 IST" name="Suite" finished-at="2024-11-29T17:56:06 IST" duration-ms="24633">
     <groups>
     </groups>
-    <test started-at="2024-11-29T16:13:46 IST" name="WebPage Test3" finished-at="2024-11-29T16:14:05 IST" duration-ms="19550">
+    <test started-at="2024-11-29T17:55:41 IST" name="WebPage Test3" finished-at="2024-11-29T17:55:54 IST" duration-ms="12955">
       <class name="WebPageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:WebPageTest@723e88f9]" started-at="2024-11-29T16:13:46 IST" name="setUp" finished-at="2024-11-29T16:13:50 IST" duration-ms="3850" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:WebPageTest@5f0fd5a0]" started-at="2024-11-29T17:55:41 IST" name="setUp" finished-at="2024-11-29T17:55:44 IST" duration-ms="2479" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testHomePage()[pri:0, instance:WebPageTest@723e88f9]" started-at="2024-11-29T16:13:50 IST" name="testHomePage" finished-at="2024-11-29T16:14:04 IST" duration-ms="14168" status="PASS">
+        <test-method signature="testHomePage()[pri:0, instance:WebPageTest@5f0fd5a0]" started-at="2024-11-29T17:55:44 IST" name="testHomePage" finished-at="2024-11-29T17:55:52 IST" duration-ms="8851" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHomePage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:WebPageTest@723e88f9]" started-at="2024-11-29T16:14:04 IST" name="tearDown" finished-at="2024-11-29T16:14:05 IST" duration-ms="1379" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:WebPageTest@5f0fd5a0]" started-at="2024-11-29T17:55:53 IST" name="tearDown" finished-at="2024-11-29T17:55:54 IST" duration-ms="1352" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- WebPageTest -->
     </test> <!-- WebPage Test3 -->
-    <test started-at="2024-11-29T16:13:46 IST" name="WebPage Test1" finished-at="2024-11-29T16:14:06 IST" duration-ms="19875">
+    <test started-at="2024-11-29T17:55:41 IST" name="WebPage Test1" finished-at="2024-11-29T17:55:59 IST" duration-ms="18096">
       <class name="WebPageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:WebPageTest@928763c]" started-at="2024-11-29T16:13:46 IST" name="setUp" finished-at="2024-11-29T16:13:50 IST" duration-ms="3850" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:WebPageTest@e25951c]" started-at="2024-11-29T17:55:41 IST" name="setUp" finished-at="2024-11-29T17:55:44 IST" duration-ms="3271" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,19 +41,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testHomePage()[pri:0, instance:WebPageTest@928763c]" started-at="2024-11-29T16:13:50 IST" name="testHomePage" finished-at="2024-11-29T16:14:05 IST" duration-ms="15589" status="PASS">
+        <test-method signature="testHomePage()[pri:0, instance:WebPageTest@e25951c]" started-at="2024-11-29T17:55:44 IST" name="testHomePage" finished-at="2024-11-29T17:55:59 IST" duration-ms="14409" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHomePage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:WebPageTest@928763c]" started-at="2024-11-29T16:14:05 IST" name="tearDown" finished-at="2024-11-29T16:14:06 IST" duration-ms="290" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:WebPageTest@e25951c]" started-at="2024-11-29T17:55:59 IST" name="tearDown" finished-at="2024-11-29T17:55:59 IST" duration-ms="208" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- WebPageTest -->
     </test> <!-- WebPage Test1 -->
-    <test started-at="2024-11-29T16:13:46 IST" name="WebPage Test2" finished-at="2024-11-29T16:14:08 IST" duration-ms="22693">
+    <test started-at="2024-11-29T17:55:41 IST" name="WebPage Test2" finished-at="2024-11-29T17:56:06 IST" duration-ms="24633">
       <class name="WebPageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:WebPageTest@2cb2fc20]" started-at="2024-11-29T16:13:46 IST" name="setUp" finished-at="2024-11-29T16:13:50 IST" duration-ms="4276" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:WebPageTest@4f4c4b1a]" started-at="2024-11-29T17:55:41 IST" name="setUp" finished-at="2024-11-29T17:55:48 IST" duration-ms="6971" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -64,11 +64,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testHomePage()[pri:0, instance:WebPageTest@2cb2fc20]" started-at="2024-11-29T16:13:50 IST" name="testHomePage" finished-at="2024-11-29T16:14:07 IST" duration-ms="17381" status="PASS">
+        <test-method signature="testHomePage()[pri:0, instance:WebPageTest@4f4c4b1a]" started-at="2024-11-29T17:55:48 IST" name="testHomePage" finished-at="2024-11-29T17:56:05 IST" duration-ms="16868" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHomePage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:WebPageTest@2cb2fc20]" started-at="2024-11-29T16:14:07 IST" name="tearDown" finished-at="2024-11-29T16:14:08 IST" duration-ms="922" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:WebPageTest@4f4c4b1a]" started-at="2024-11-29T17:56:05 IST" name="tearDown" finished-at="2024-11-29T17:56:06 IST" duration-ms="731" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

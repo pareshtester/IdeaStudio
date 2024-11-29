@@ -16,28 +16,4 @@
       </class> <!-- WebPageTest -->
     </classes>
   </test> <!-- WebPage Test1(failed) -->
-  <test thread-count="5" parallel="tests" name="WebPage Test2(failed)">
-    <parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="WebPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="testHomePage"/>
-        </methods>
-      </class> <!-- WebPageTest -->
-    </classes>
-  </test> <!-- WebPage Test2(failed) -->
-  <test thread-count="5" parallel="tests" name="WebPage Test3(failed)">
-    <parameter name="browser" value="edge"/>
-    <classes>
-      <class name="WebPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="testHomePage"/>
-        </methods>
-      </class> <!-- WebPageTest -->
-    </classes>
-  </test> <!-- WebPage Test3(failed) -->
 </suite> <!-- Failed suite [Suite] -->

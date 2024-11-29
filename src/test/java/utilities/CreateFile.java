@@ -9,7 +9,16 @@ import java.util.Date;
 public class CreateFile {
 
 	 public File fileSetup()
-	 {   String path = System.getProperty("user.dir");
+	   {   
+		 String extentpath = System.getProperty("user.dir")+"/ExtentReports";
+			File folder = new File(extentpath);
+			String screenshotpath = System.getProperty("user.dir")+"/Screenshots";
+			File ssfolder = new File(screenshotpath);
+		 DeleteFiles df = new DeleteFiles();
+		 df.deletefiles(ssfolder);
+		 df.deletefiles(folder);
+		 
+		 String path = System.getProperty("user.dir");
 	 Date d = new Date();
 	 String datepath = d.toString().replace(" ", "-").replace(":","-");
 		 File extentFile = new File(path+"/ExtentReports/"+datepath+".html");
